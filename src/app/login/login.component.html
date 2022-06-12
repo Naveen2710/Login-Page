@@ -1,0 +1,16 @@
+<div class="main-section">
+    <form class="loginForm">
+        <h1>Login Page</h1>
+        <input type="email" placeholder="Email" (keyup)="emailId($event)" name="email" id="email" required/>
+        <input type="password" placeholder="Password" (keyup)="passWord($event)" name="password" id="password" required/>
+        <div class="checkbox">
+            <input type="checkbox" (click)="login()" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1">Confirm Details</label>
+        </div>
+        <button *ngIf="user" (click)="output()" routerLink='/website'>Login</button>
+        <button *ngIf="!user" (click)="output()" routerLink="/login">Login</button>
+
+        <div *ngIf="user">
+        </div>
+    </form>
+</div>

@@ -1,0 +1,142 @@
+.main-section {
+    max-width: 100vw;
+    height: 10vh;
+    background-color: #3a1aa3;
+    border-bottom: .1px solid #5d2bff;
+}
+
+.main-section,
+.logo,
+.options ul,
+.cart {
+    display: flex;
+    flex-direction: row;
+    color: #f0f0ff;
+    align-items: center;
+}
+
+.logo,
+.options li,
+.cart {
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 19vw;
+}
+
+.main-logo,
+.cart-logo {
+    height: 25px;
+}
+
+.website {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 1vw;
+}
+
+.options {
+    margin-left: 7vw;
+}
+
+.options ul li {
+    margin-left: 1.3vw;
+    font-size: 12px;
+    letter-spacing: .1px;
+    list-style-type: none;
+}
+
+.cart {
+    margin-left: 8vw;
+}
+
+.search {
+    margin-left: 2vw;
+    height: 23px;
+}
+
+.toggle {
+    position: absolute;
+    top: .4rem;
+    right: 2rem;
+    height: 40px;
+    width: 50px;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+    .logo {
+        margin-left: 15vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .logo {
+        margin-left: 10vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .logo {
+        margin-left: 5vw;
+    }
+    .options {
+        margin-left: 5vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .toggle,
+    .toggle-button {
+        display: flex;
+    }
+    .cart {
+        display: none;
+    }
+    .main-section {
+        flex-direction: column;
+        height: fit-content;
+        align-items: flex-start;
+    }
+    .options {
+        width: 100%;
+        align-items: flex-start;
+        margin-left: 0px;
+        display: none;
+    }
+    .options ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        align-items: center;
+        padding-left: 0px;
+    }
+    .options ul li {
+        margin-left: 0px;
+        padding: .5rem 1rem;
+    }
+    .options.active {
+        display: flex;
+    }
+}

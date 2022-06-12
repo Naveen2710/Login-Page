@@ -1,0 +1,73 @@
+.main-section {
+    max-width: 100vw;
+    height: 90vh;
+    background-image: linear-gradient( #3a1aa3 0%, #7f56e8 100%);
+}
+
+h1 {
+    color: #b9d0fa;
+    margin-top: 0px;
+}
+
+.loginForm {
+    margin: auto;
+    display: flex;
+    padding-top: 10vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    height: 5vh;
+    width: 250px;
+    margin-top: 5vh;
+    border: 2px solid #b9d0fa;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 14px;
+    color: #b9d0fa;
+}
+
+::placeholder {
+    color: #b9d0fa;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 4px solid #4a8aff;
+}
+
+.checkbox {
+    width: 250px;
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    color: #b9d0fa;
+}
+
+.checkbox input {
+    width: max-content;
+    margin-top: auto;
+}
+
+button {
+    height: 35px;
+    width: 100px;
+    margin-top: 5vh;
+    border-radius: 5px;
+    background-color: #4a8aff;
+    border: 2px solid #002f85;
+    color: #063800;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {}
+
+@media screen and (max-width: 450px) {}
+
+@media screen and (max-width: 450px) {}
+
+@media screen and (max-width: 450px) {}
