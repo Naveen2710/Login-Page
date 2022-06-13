@@ -33,9 +33,8 @@ export class LoginComponent implements OnInit {
 
   login() {
     let password = localStorage.getItem(this.email);
-    console.log(password);
   
-    if(password) {
+    if(password == this.password) {
       this.user = true;
     }
     else {
